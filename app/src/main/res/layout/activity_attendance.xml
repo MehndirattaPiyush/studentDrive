@@ -26,46 +26,26 @@
         android:layout_width="match_parent"
         android:background="@color/Black"/>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Subject"
-        android:textColor="@color/Black"
-        android:textSize="24sp"
-        android:layout_marginTop="24dp"
-        android:layout_marginLeft="24dp" />
-
-    <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="Required"
-            android:textColor="@color/Black"
-            android:textSize="24sp"
-            android:layout_marginTop="24dp"
-            android:layout_marginLeft="24dp"/>
-
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="your's"
-            android:textColor="@color/Black"
-            android:textSize="24sp"
-            android:layout_marginTop="24dp"
-            android:layout_marginLeft="24dp"/>
-
-    </LinearLayout>
+    <ListView
+        android:id="@+id/list"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/abc_button_inset_vertical_material"
+        android:paddingLeft="@dimen/abc_button_inset_horizontal_material"
+        android:paddingRight="@dimen/abc_button_inset_horizontal_material"
+        android:paddingBottom="@dimen/abc_button_inset_vertical_material"
+        android:layout_marginTop="@dimen/activity_vertical_margin"/>
 
     <Button
         android:text="Total Percentage"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/holo_blue_light"
+        android:padding="8dp" />
 
 
 </LinearLayout>

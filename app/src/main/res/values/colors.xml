@@ -3,14 +3,14 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="White">#FFFFFF</color>
+    <color name="White">#ffffff</color>
     <color name="Black">#000000</color>
     <color name="grey">#A9A9A9</color>
     <color name="Darkgrey">#4b4747</color>
     <color name="lightgrey">#D3D3D3</color>
     <color name="Navyblue">#000080</color>
     <color name="Cobaltblue">#0020C2</color>
-    <color name="Sapphireblue">#2554C7</color>
-    <color name="Deepskyblue">#3BB9FF</color>
-    <color name="Skyblue">#6698FF</color>
+    <color name="Sapphireblue">#4c7df5</color>
+    <color name="Deepskyblue">#3bb9ff</color>
+    <color name="Skyblue">#bfd2fb</color>
 </resources>

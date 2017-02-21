@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Find the View that shows the numbers category
-        TextView signIn = (TextView) findViewById(R.id.activity_login);
+        TextView signIn = (TextView) findViewById(R.id.signIn);
 
         // Set a click listener on that View
         signIn.setOnClickListener(new View.OnClickListener() {

@@ -1,5 +1,6 @@
 package com.example.harshjha.studentdrive;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,7 +17,7 @@ public class LoggedInActivity extends AppCompatActivity {
         setContentView(R.layout.activity_logged_in);
 
         // Find the View that shows the Notices category
-        TextView notice = (TextView) findViewById(R.id.activity_notices);
+        TextView notice = (TextView) findViewById(R.id.tv_ln);
 
         // Set a click listener on that View
         notice.setOnClickListener(new View.OnClickListener() {
@@ -29,7 +30,7 @@ public class LoggedInActivity extends AppCompatActivity {
         });
 
         // Find the View that shows the timetable category
-        TextView timetable = (TextView) findViewById(R.id.activity_time_table);
+//        TextView timetable = (TextView) findViewById(R.id.activity_time_table);
 
         // Set a click listener on that View
         notice.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +44,7 @@ public class LoggedInActivity extends AppCompatActivity {
 
 
         // Find the View that shows the Attendance category
-        TextView attendance = (TextView) findViewById(R.id.activity_attendance);
+//        TextView attendance = (TextView) findViewById(R.id.activity_attendance);
 
         // Set a click listener on that View
         notice.setOnClickListener(new View.OnClickListener() {
@@ -56,17 +57,29 @@ public class LoggedInActivity extends AppCompatActivity {
         });
 
         // Find the View that shows the Assignment category
-        TextView assignment = (TextView) findViewById(R.id.activity_assingment);
+//        TextView assignment = (TextView) findViewById(R.id.activity_assingment);
 
         // Set a click listener on that View
         notice.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the Assignment View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent assignmentIntent = new Intent(LoggedInActivity.this, AssingmentActivity.class);
+                Intent assignmentIntent = new Intent(LoggedInActivity.this, AssignmentActivity.class);
                 startActivity(assignmentIntent);
             }
         });
 
+        // Find the View that shows the Results category
+//        TextView results = (TextView) findViewById(R.id.activity_results);
+
+        // Set a click listener on that View
+        notice.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the Assignment View is clicked on.
+            @Override
+            public void onClick(View view) {
+//                Intent resultsIntent = new Intent(LoggedInActivity.this, ResultstActivity.class);
+//                startActivity(resultsIntent);
+            }
+        });
     }
 }

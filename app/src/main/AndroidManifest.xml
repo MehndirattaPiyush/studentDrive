@@ -26,12 +26,18 @@
         <activity
             android:name=".TimeTable"
             android:label="TimeTable" />
-        <activity android:name=".AttendanceActivity" />
-        <activity android:name=".NoticesActivity" />
-        <activity android:name=".AssingmentActivity" />
+        <activity
+            android:name=".AttendanceActivity"
+            android:label="Attendance" />
+        <activity
+            android:name=".NoticesActivity"
+            android:label="Notices" />
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".AssignmentActivity"
+            android:label="Assignment" />
     </application>
 
 </manifest>

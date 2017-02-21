@@ -18,7 +18,7 @@
         android:id="@+id/textView2"
         android:layout_weight="1"
         android:paddingTop="16dp"
-        android:paddingBottom="24dp"
+        android:paddingBottom="16dp"
         android:textAlignment="center"
         android:textColor="@color/Black"
         android:textAllCaps="true"
@@ -59,53 +59,15 @@
         android:id="@+id/button2" />
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text=""
-        android:background="@color/grey"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text=""
-        android:background="@color/grey"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text=""
-        android:background="@color/grey"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text=""
-        android:background="@color/grey"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text=""
-        android:background="@color/grey"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"/>
+   <ListView
+       android:id="@+id/list"
+       android:orientation="vertical"
+       android:layout_height="0dp"
+       android:layout_weight="6"
+       android:layout_width="match_parent"
+       android:paddingTop="@dimen/abc_button_inset_vertical_material"
+       android:paddingLeft="@dimen/abc_button_inset_horizontal_material"
+       android:paddingRight="@dimen/abc_button_inset_horizontal_material"
+       android:paddingBottom="@dimen/abc_button_inset_vertical_material"
+       android:layout_marginTop="@dimen/activity_vertical_margin"/>
 </LinearLayout>
