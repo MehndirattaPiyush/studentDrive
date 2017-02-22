@@ -53,10 +53,24 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
             convertView = infalInflater.inflate(R.layout.list_item, null);
         }
 
-        TextView txtListChild = (TextView) convertView
-                .findViewById(R.id.lblListItem);
+        TextView txtListChildCode = (TextView) convertView
+                .findViewById(R.id.sub_code);
+        TextView txtListChildName = (TextView) convertView
+                .findViewById(R.id.teacher_name);
+        TextView txtListChildTime = (TextView) convertView
+                .findViewById(R.id.timing);
+        TextView txtListChildAtte = (TextView) convertView
+                .findViewById(R.id.attendance);
+        TextView txtListChildRoom = (TextView) convertView
+                .findViewById(R.id.room);
 
-        txtListChild.setText(childText);
+       String[] childlets = childText.split("@");
+
+        txtListChildCode.setText(childlets[0]);
+        txtListChildName.setText(childlets[1]);
+        txtListChildTime.setText(childlets[2]);
+        txtListChildRoom.setText(childlets[3]);
+        txtListChildAtte.setText("0/10");
         return convertView;
     }
 
