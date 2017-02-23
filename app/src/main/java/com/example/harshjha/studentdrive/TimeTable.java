@@ -40,6 +40,7 @@ public class TimeTable extends AppCompatActivity {
     JSONArray feeds ;
 
     List<String> listDataHeader;
+
     HashMap<String, List<String>> listDataChild;
 
     private static final String TAG_RESULTS = "result";
