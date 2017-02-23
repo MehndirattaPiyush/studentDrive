@@ -58,6 +58,7 @@ public class TimeTable extends AppCompatActivity {
     List<String> wed = new ArrayList<String>();
     List<String> thu = new ArrayList<String>();
     List<String> fri = new ArrayList<String>();
+    List<String> att = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +69,7 @@ public class TimeTable extends AppCompatActivity {
         // preparing list data
         prepareListData();
 
-        listAdapter = new ExpandableListAdapter(getApplicationContext(), listDataHeader, listDataChild);
+        listAdapter = new ExpandableListAdapter(getApplicationContext(), listDataHeader, listDataChild,att);
 
         // setting list adapter
         expandableListView.setAdapter(listAdapter);
@@ -89,8 +90,28 @@ public class TimeTable extends AppCompatActivity {
 
 
         String mond = "IT-201@Mr. Piyush Kumar@10:00-11:00am@D-314&IT-211@Mr. Piyush Kumar@11:00-12:00am@D-314";
+        String tues = "IT-201@Mr. Piyush Kumar@10:00-11:00am@D-314&IT-211@Mr. Piyush Kumar@11:00-12:00am@D-314";
+        String wedn = "IT-201@Mr. Piyush Kumar@10:00-11:00am@D-314&IT-211@Mr. Piyush Kumar@11:00-12:00am@D-314";
+        String thur = "IT-201@Mr. Piyush Kumar@10:00-11:00am@D-314&IT-211@Mr. Piyush Kumar@11:00-12:00am@D-314";
+        String frid = "IT-201@Mr. Piyush Kumar@10:00-11:00am@D-314&IT-211@Mr. Piyush Kumar@11:00-12:00am@D-314";
 
-        Collections.addAll(mon, mond.split("&"));
+        String atte = "IT-201@1/10&IT-211@2/3";
+        String[] att = atte.split("&");
+        int i = 0;
+        for (String child: mond.split("&")
+             ) {
+
+            child=child+"@"+att[i] ;
+            i++;
+            mon.add(child);
+        }
+
+        //Collections.addAll(mon, mond.split("&"));
+        Collections.addAll(tue, tues.split("&"));
+        Collections.addAll(wed, wedn.split("&"));
+        Collections.addAll(thu, thur.split("&"));
+        Collections.addAll(fri, frid.split("&"));
+       // Collections.addAll(att, atte.split("&"));
 
 //        BackgroundWorker backgroundWorker = new BackgroundWorker(getApplicationContext());
 //        backgroundWorker.execute();
@@ -107,6 +128,11 @@ public class TimeTable extends AppCompatActivity {
 
 
         listDataChild.put(listDataHeader.get(0), mon); // Header, Child data
+        listDataChild.put(listDataHeader.get(1), tue); // Header, Child data
+        listDataChild.put(listDataHeader.get(2), wed); // Header, Child data
+        listDataChild.put(listDataHeader.get(3), thu); // Header, Child data
+        listDataChild.put(listDataHeader.get(4), fri); // Header, Child data
+
 //        listDataChild.put(listDataHeader.get(1), nowShowing);
 //        listDataChild.put(listDataHeader.get(2), comingSoon);
     }
